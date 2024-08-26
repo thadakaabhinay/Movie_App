@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abhinay Thadaka">
+    <meta name="description content="Top 250 IMDB Movie List with search,rating and genere filter">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading-1">Movie App</h1>
+        <div class="options">
+            <div class="search-container">
+                <input type="text" class="input" placeholder="Search a Movie" />
+            </div>
+            <div>
+                <select class="rating-select" id="rating-select">
+                    <option class="option" value="">Rating</option>
+                    <option class="option" value="6">6 & Above</option>
+                    <option class="option" value="6.5">6.5 & Above</option>
+                    <option class="option" value="7">7 & Above</option>
+                    <option class="option" value="7.5">7.5 & Above</option>
+                </select>
+            </div>
+            <div>
+                <select class="rating-select" id="genre-select">
+                    <option class="option" value="">Genre</option>
+                </select>
+            </div>
+
+        </div>
+        
+    </header>
+    <main class="main">
+    </main>
+    <script type="module" src="index.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</body>
+</html>
