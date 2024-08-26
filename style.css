@@ -28,6 +28,7 @@ body{
 .heading-1{
     font-size: 3rem;
     color:var(--text-color-primary);
+    cursor:pointer;
 }
 
 .options{

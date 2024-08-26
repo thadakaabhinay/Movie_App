@@ -1,7 +1,8 @@
 const parentElement=document.querySelector(".main");
-const searchInput=document.querySelector("input");
+const searchInput=document.querySelector(".input");
 const movieRatings=document.querySelector("#rating-select");
 const movieGenres=document.querySelector("#genre-select");
+const app=document.querySelector(".movieApp");
 
 
 let searchValue="";
@@ -178,5 +179,20 @@ function handleGenreSelect(event){
 movieGenres.addEventListener("change",handleGenreSelect);
 
 createMovieCard(movies,genres);
+
+const handleApp=()=>{
+    searchInput.value="";
+    movieRatings.value="";
+    movieGenres.value="";
+    searchValue="";
+    ratings=0;
+    genre_data="";
+    const filteredByMovieApp=getFilteredData();
+    createMovieCard(filteredByMovieApp,genres);
+    
+}
+
+
+app.addEventListener("click",handleApp);
 
 
